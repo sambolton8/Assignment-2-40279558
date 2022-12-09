@@ -1,0 +1,60 @@
+<!-- Links the stylesheet and sets the browser icon -->
+<link rel="stylesheet" href="../static/css/theme.css">
+<link rel="icon" href="static/img/logo3.png">
+
+<!-- Page banner -->
+
+<div id="masthead">  
+	<h1><a href="/">Astral Scape
+			<img src="static/img/logot.png" id="logo"> </a>				
+		<div class="roundedSquare">
+			<form action="/submit" method="GET">	<p value="{{Anonymous}}"><a href="menu">{{username}}<img src="{{ppic}}" id="profilePicture"> </a></p> </form>
+		</div>
+	</h1>
+</div>
+
+<!-- Menu used to allow the user to edit their personal information. -->
+
+<div class="informationContainer">
+	<form  method="POST">
+		<hr>
+		<label for="nameField">What is your name?
+		</label>
+		<input type="text" maxlength="10" id="nameField" name="nameField">
+		<br><hr>
+		<label for="cityField">What city are you in?
+		</label>
+		<input type="text" id="cityField" maxlength="10" name="cityField">
+		<br><hr> 
+	
+		<!-- Profile picture selection box. -->
+
+		<div class="radioContainer">
+			<input type="radio" name="profilePic" value="static/img/cat.png">
+			<img src="static/img/cat.png" id="profilePictureSelection"
+					       
+			<label>
+				<input type="radio" name="profilePic" value="static/img/dogGlasses.png"> 
+				<img src="static/img/dogGlasses.png" id="profilePictureSelection">
+			</label>
+
+			<label>
+				<input type="radio" name="profilePic" value="static/img/fox.png">
+				<img src="static/img/fox.png" id="profilePictureSelection">
+			</label>	
+
+			<label>
+				<input type="radio" name="profilePic" value="static/img/catFunny.png">
+				<img src="static/img/catFunny.png" id="profilePictureSelection">
+			</label>		
+
+			<label>
+				<input type="radio" name="profilePic" value="static/img/otter.png">
+				<img src="static/img/otter.png" id="profilePictureSelection">
+			</label>
+			<button type="submit" name="submitButton" id="submitButton">Submit</button>
+		</div>
+	</form>
+</div>
+
+

@@ -1,0 +1,331 @@
+/* override bootstrap styles */
+@import url('http://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
+/* Main body */
+body {
+	color:#646464;
+	background-color:#efefef;
+}
+
+/* Page footer */
+footer {
+	margin-top:40px;
+	padding-top:40px;
+	padding-bottom:40px;
+	background-color:#3295a8;
+}
+
+/* Page banner */
+#masthead {
+	min-height:199px;
+	background-color:#3295a8;
+	color:#aaaacc;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-right: 50px;
+	border-radius: 15px;
+  }
+
+/* Page header */
+#masthead h1 {
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size: 80px;
+	line-height: 1;
+	color:#fefeff;
+	margin-top:40px;
+}
+
+/* Logo */
+#logo {
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	top: 35px;
+}
+
+/* Changes the logo's colour on mouse hover. */
+#logo:hover {
+	filter: invert(100%);
+	text-decoration:none;
+}
+
+/* Styles the user's current profile picture */
+#profilePicture {
+	height: 50px;
+	width: 50px;
+	float: right;
+	position: relative;
+	right: 10px;
+	bottom: 10px;
+}
+
+/* Styles the profile pictures on the feed. */
+#profilePictureFeed {
+	height: 50px;
+	width: 50px;
+	float: left;
+	position: relative;
+	margin: 0 auto;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-top: 15px;
+}
+
+/* Styles the profile pictures in the picture selection area. */
+#profilePictureSelection {
+	height: 50px;
+	width: 50px;
+	margin-left: 20px;
+}
+
+/* Hides the radio buttons for the picture selection area. */
+input[type="radio"] {
+display: none;
+}
+
+/* Allows the cursor to change when hovering over the pictures in the picture selection area. */
+label{
+	cursor: pointer;
+}
+
+/* Creates a border around the selection image in the image selection area. */
+input[type="radio"]:checked + img {
+	border: 2px solid black;
+	border-radius: 25px;
+}
+
+/* Container used for the image selection box */
+.radioContainer {
+	margin: 30px;
+}
+
+/* Rounded box for the current user in the top right hand corner. */
+#masthead .roundedSquare {
+	border-radius: 15px;
+	background-color: #bcd7e0;
+	padding: 10px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	width: 200px;
+	height: 80px;
+	font-size: 30px;
+	line-height: 1;
+	color:#fefeff;
+	float: right;
+}
+
+/* Name containers for the feed name boxes */
+#nameContainer {
+	border-radius: 15px;
+	background-color: #bcd7e0;
+	padding: 10px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	width: 200px;
+	height: 80px;
+	line-height: 1;
+	color:#fefeff;
+	float: left;
+}
+
+/* Containers for the posts in the feed */
+#feedContainer {
+	width: 500px;
+	height: 120px;
+	background-color: #CCC;
+	border-radius: 15px;
+	padding: 10px;
+	padding-bottom: 65px;
+	position: relative;
+	left: 250px;
+	
+}
+
+/* Name containers for the posts created by the user */
+#nameContainerOwn {
+	border-radius: 15px;
+	background-color: #bcd7e0;
+	padding: 10px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	width: 200px;
+	height: 80px;
+	line-height: 1;
+	color:#fefeff;
+	float: right;
+	
+}
+
+/* Post container for the posts created by the user */
+#feedContainerOwn {
+	width: 500px;
+	height: 120px;
+	background-color: #CCC;
+	border-radius: 15px;
+	padding: 10px;
+	padding-bottom: 65px;
+	position: relative;
+	left: 1116px;
+}
+
+/* Styles the name text in the feed */
+p.feedName {
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size: 26px;
+	position: relative;
+	bottom: 5px;
+	overflow:hidden;
+}
+
+/* Styles the city text in the feed */
+p.feedCity {
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size: 22px;
+	position: relative;
+	bottom: 25px;
+	left: 55px;
+	overflow:visible;
+}
+
+/* Styles the post text in the feed */
+p.feedText {
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size: 18px;
+	position: absolute;
+	float: left;
+	bottom: 100px;
+}
+
+/* Styles the post creation time in the feed. */
+small.postedTime {
+	font-family:courier,'new courier';
+	position: absolute;
+	top: 160px;
+	left: 350px;
+}
+
+/* Labels used for the menu input fields. */ 
+label {
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+/* Menu name field style. */
+#nameField{
+	margin-left: 60px;
+	width: 200px;
+	height: 30px;
+}
+
+/* Menu city field style. */
+#cityField{
+	margin-left: 48px;
+	width: 200px;
+	height: 30px;
+}
+
+/* Styles the hyperlink text so that it changes colour when hovered over. */
+a:link {
+	color: white;
+}
+  
+a:visited {
+	color: white;
+}
+  
+a:active {
+	color: red;
+}
+  
+a,a:hover {
+	color:#223344;
+	color:#223344;
+	text-decoration:none;
+}
+
+/* Styles the post input container. */
+.inputBoxContainer {
+	width: 500px;
+	height: 150px;
+	background-color: #CCC;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 15px;
+	padding: 10px;
+	padding-bottom: 65px;
+	position: relative;
+	vertical-align: top;
+}
+
+/* Styles the text box in the post input container */
+.inputBoxContainer input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: 15px;
+	direction: ltr;
+	text-align: left;
+	vertical-align: top;
+}
+
+/* Styles the profile picture beside the post creation container. */
+.inputBoxContainer img {
+	height: 60px;
+	width: 60px;
+	float: left;
+	position: absolute;
+	right: 530px;
+}
+
+/* Styles the container in which the edit information from resides in. */
+.informationContainer {
+	width: 500px;
+	height: 210px;
+	background-color: #CCC;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 15px;
+	padding: 10px;
+	padding-bottom: 65px;
+	position: relative;
+	
+}
+
+/* Styles all of the buttons */
+button {
+	text-align: center;
+	display: inline-block;
+	padding: 15px 30px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	letter-spacing: 2px;
+	position:relative;
+	overflow:hidden;
+	margin-left: 330px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+button:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 0;
+	background : #bcd7e0;
+	left: 0;
+	bottom: 0;
+	transition: all .3s;
+	opacity: 0.3;
+}
+
+button:hover:before {
+	width: 100%;
+}
+
+/* Positions the submit information change button. */
+#submitButton{
+	margin: auto;
+	display: block;
+	margin-top: 10px;
+}
+

@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="../static/css/theme.css">
+<link rel="icon" href="static/img/logo3.png">
+
+<!-- If there is an error on this page the error message will be displayed for the user. -->
+{% if error %}
+	<div class="error">{{ error }} </div>
+{% endif %}
+
+<!-- Page banner -->
+
+<div id="masthead">  
+	<h1><a href="/">Astral Scape
+			<img src="static/img/logot.png" id="logo"> </a>				
+		<div class="roundedSquare">
+			<form action="/submit", "/" method="GET">
+				<p id="currentName" name="currentName"><a href="menu">{{username}}<img src="{{ppic}}" id="profilePicture"> </a></p> </form>
+		</div>
+	</h1>
+</div>
+
+<!-- Post submission box -->
+
+<form action="/" method="POST", "GET">
+<div class="inputBoxContainer">
+	<a href="templates/menu.html"><img src="{{ppic}}"></a>
+	<input type="text" maxlength="100" name="postText" />
+	<button>Submit post</button>
+</div>
+<br><hr><br>       
+
+<!-- Post feed -->
+	<!-- Post and name boxes used for the user's personal posts -->
+<div>
+	{% for post, postname, postcity, postpic in post_data|reverse %}
+		<div id="nameContainerOwn">    
+		<img src="{{postpic}}" id="profilePictureFeed">
+		<p class="feedName" name="feedNameSelf">{{ postname }} </p>
+		<p class="feedCity" name="feedNameSelf">{{ postcity }}</p>
+		</div>
+		<div id="feedContainerOwn">
+			<p class="feedText">{{ post }}</p>
+			<small class="postedTime"> Just now...</small>
+		</div>
+		
+		<br><hr><br>
+	{% endfor %}
+</div>
+
+<!-- Post and name boxes used for other user's posts. -->
+<div id="nameContainer">    
+	<img src="static/img/cat.png" id="profilePictureFeed">
+	<p class="feedName"> Josh Hayes </p>
+	<p class="feedCity"> Aberdeen</p>
+</div>									
+
+<div id="feedContainer">
+	<p class="feedText">First time posting who wants to see my dog??</p>
+	<small class="postedTime"> 3 hours ago...</small>
+</div>
+
+<br><hr><br>
+
+<div id="nameContainer">    
+	<img src="static/img/otter.png" id="profilePictureFeed">
+	<p class="feedName"> Kyle Keif </p>
+	<p class="feedCity"> Dundee</p>
+</div>																		           
+<div id="feedContainer">
+	<p class="feedText">Wow this website is so good!!! :)</p>
+	<small class="postedTime"> 5 hours ago...</small>
+</div>
+
+<br><hr><br>
+
+<div id="nameContainer">    
+	<img src="static/img/dogGlasses.png" id="profilePictureFeed">
+	<p class="feedName"> Patrick TP </p>
+	<p class="feedCity"> Ireland</p>
+</div>									
+										           
+<div id="feedContainer">
+	<p class="feedText">Anyone want to trade chickens on farmville..?</p>
+	<small class="postedTime"> 6 hours ago...</small>
+</div>
+
+<br><hr><br>
+									  	
+<footer>
+</footer>
